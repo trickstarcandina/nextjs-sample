@@ -11,9 +11,9 @@ export default function Stories() {
             <p className="mt-2 text-gray-600 animate-fade-in delay-100">Read comforting tales to lift your spirits.</p>
           </div>
           <nav className="flex gap-6">
-            <a href="/" className="text-blue-600 hover:text-blue-800 transition-colors font-medium">Home</a>
-            <a href="/stories" className="text-blue-600 hover:text-blue-800 transition-colors font-medium">Stories</a>
-            <a href="/gallery" className="text-blue-600 hover:text-blue-800 transition-colors font-medium">Gallery</a>
+            <Link href="/" className="text-blue-600 hover:text-blue-800 transition-colors font-medium">Home</Link>
+            <Link href="/stories" className="text-blue-600 hover:text-blue-800 transition-colors font-medium">Stories</Link>
+            <Link href="/gallery" className="text-blue-600 hover:text-blue-800 transition-colors font-medium">Gallery</Link>
           </nav>
         </div>
       </header>
