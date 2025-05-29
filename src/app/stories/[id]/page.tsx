@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 export default async function StoryPage({ params }: { params: Promise<{ id: string }> }) {
   // Sample story data - in a real app, this would be fetched from a data source
@@ -74,9 +75,9 @@ export default async function StoryPage({ params }: { params: Promise<{ id: stri
           <div className="max-w-7xl mx-auto px-4 py-6 sm:px-6 lg:px-8 flex justify-between items-center">
             <h1 className="text-3xl font-bold text-gray-900 animate-fade-in">Story Not Found</h1>
             <nav className="flex gap-6">
-              <a href="/" className="text-blue-600 hover:text-blue-800 transition-colors font-medium">Home</a>
-              <a href="/stories" className="text-blue-600 hover:text-blue-800 transition-colors font-medium">Stories</a>
-              <a href="/gallery" className="text-blue-600 hover:text-blue-800 transition-colors font-medium">Gallery</a>
+              <Link href="/" className="text-blue-600 hover:text-blue-800 transition-colors font-medium">Home</Link>
+              <Link href="/stories" className="text-blue-600 hover:text-blue-800 transition-colors font-medium">Stories</Link>
+              <Link href="/gallery" className="text-blue-600 hover:text-blue-800 transition-colors font-medium">Gallery</Link>
             </nav>
           </div>
         </header>
@@ -98,9 +99,9 @@ export default async function StoryPage({ params }: { params: Promise<{ id: stri
         <div className="max-w-7xl mx-auto px-4 py-6 sm:px-6 lg:px-8 flex justify-between items-center">
           <h1 className="text-3xl font-bold text-gray-900 animate-fade-in">{story.title}</h1>
           <nav className="flex gap-6">
-            <a href="/" className="text-blue-600 hover:text-blue-800 transition-colors font-medium">Home</a>
-            <a href="/stories" className="text-blue-600 hover:text-blue-800 transition-colors font-medium">Stories</a>
-            <a href="/gallery" className="text-blue-600 hover:text-blue-800 transition-colors font-medium">Gallery</a>
+            <Link href="/" className="text-blue-600 hover:text-blue-800 transition-colors font-medium">Home</Link>
+            <Link href="/stories" className="text-blue-600 hover:text-blue-800 transition-colors font-medium">Stories</Link>
+            <Link href="/gallery" className="text-blue-600 hover:text-blue-800 transition-colors font-medium">Gallery</Link>
           </nav>
         </div>
       </header>

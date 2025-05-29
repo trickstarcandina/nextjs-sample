@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 export default function Stories() {
   return (
@@ -23,27 +24,27 @@ export default function Stories() {
             <div className="bg-white rounded-xl shadow-md p-6 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 animate-fade-in delay-300">
               <h3 className="text-xl font-medium text-gray-900">The Kind Little Bird</h3>
               <p className="mt-2 text-gray-600 line-clamp-2">A small bird helps a friend in need with a simple act of kindness.</p>
-              <a href="/stories/1" className="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold transition-colors">Read more</a>
+              <Link href="/stories/1" className="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold transition-colors">Read more</Link>
             </div>
             <div className="bg-white rounded-xl shadow-md p-6 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 animate-fade-in delay-400">
               <h3 className="text-xl font-medium text-gray-900">Sunny Meadow Dreams</h3>
               <p className="mt-2 text-gray-600 line-clamp-2">A peaceful day in a magical meadow brings unexpected joy.</p>
-              <a href="/stories/2" className="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold transition-colors">Read more</a>
+              <Link href="/stories/2" className="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold transition-colors">Read more</Link>
             </div>
             <div className="bg-white rounded-xl shadow-md p-6 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 animate-fade-in delay-500">
               <h3 className="text-xl font-medium text-gray-900">The Lost Star</h3>
               <p className="mt-2 text-gray-600 line-clamp-2">A tiny star finds its way home with the help of new friends.</p>
-              <a href="/stories/3" className="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold transition-colors">Read more</a>
+              <Link href="/stories/3" className="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold transition-colors">Read more</Link>
             </div>
             <div className="bg-white rounded-xl shadow-md p-6 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 animate-fade-in delay-600">
               <h3 className="text-xl font-medium text-gray-900">The Gentle Wave</h3>
               <p className="mt-2 text-gray-600 line-clamp-2">A wave learns the power of calmness on a stormy day.</p>
-              <a href="/stories/4" className="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold transition-colors">Read more</a>
+              <Link href="/stories/4" className="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold transition-colors">Read more</Link>
             </div>
             <div className="bg-white rounded-xl shadow-md p-6 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 animate-fade-in delay-700">
               <h3 className="text-xl font-medium text-gray-900">A Cozy Blanket Tale</h3>
               <p className="mt-2 text-gray-600 line-clamp-2">A magical blanket brings warmth to everyone it touches.</p>
-              <a href="/stories/5" className="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold transition-colors">Read more</a>
+              <Link href="/stories/5" className="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold transition-colors">Read more</Link>
             </div>
           </div>
         </section>

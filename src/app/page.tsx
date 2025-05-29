@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -10,9 +11,9 @@ export default function Home() {
             <p className="mt-2 text-gray-600 animate-fade-in delay-100">A place for comfort with stories and cute images.</p>
           </div>
           <nav className="flex gap-6">
-            <a href="/" className="text-blue-600 hover:text-blue-800 transition-colors font-medium">Home</a>
-            <a href="/stories" className="text-blue-600 hover:text-blue-800 transition-colors font-medium">Stories</a>
-            <a href="/gallery" className="text-blue-600 hover:text-blue-800 transition-colors font-medium">Gallery</a>
+            <Link href="/" className="text-blue-600 hover:text-blue-800 transition-colors font-medium">Home</Link>
+            <Link href="/stories" className="text-blue-600 hover:text-blue-800 transition-colors font-medium">Stories</Link>
+            <Link href="/gallery" className="text-blue-600 hover:text-blue-800 transition-colors font-medium">Gallery</Link>
           </nav>
         </div>
       </header>
@@ -24,21 +25,21 @@ export default function Home() {
             <div className="bg-white rounded-xl shadow-md p-6 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 animate-fade-in delay-300">
               <h3 className="text-xl font-medium text-gray-900">The Kind Little Bird</h3>
               <p className="mt-2 text-gray-600 line-clamp-2">A small bird helps a friend in need...</p>
-              <a href="/stories/1" className="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold transition-colors">Read more</a>
+              <Link href="/stories/1" className="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold transition-colors">Read more</Link>
             </div>
             <div className="bg-white rounded-xl shadow-md p-6 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 animate-fade-in delay-400">
               <h3 className="text-xl font-medium text-gray-900">Sunny Meadow Dreams</h3>
               <p className="mt-2 text-gray-600 line-clamp-2">A peaceful day in a magical meadow...</p>
-              <a href="/stories/2" className="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold transition-colors">Read more</a>
+              <Link href="/stories/2" className="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold transition-colors">Read more</Link>
             </div>
             <div className="bg-white rounded-xl shadow-md p-6 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 animate-fade-in delay-500">
               <h3 className="text-xl font-medium text-gray-900">The Lost Star</h3>
               <p className="mt-2 text-gray-600 line-clamp-2">A tiny star finds its way home...</p>
-              <a href="/stories/3" className="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold transition-colors">Read more</a>
+              <Link href="/stories/3" className="mt-4 inline-block text-blue-600 hover:text-blue-800 font-semibold transition-colors">Read more</Link>
             </div>
           </div>
           <div className="mt-8 text-center animate-fade-in delay-600">
-            <a href="/stories" className="inline-block bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-blue-600 transition-colors duration-300 transform hover:scale-105">View All Stories</a>
+            <Link href="/stories" className="inline-block bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-blue-600 transition-colors duration-300 transform hover:scale-105">View All Stories</Link>
           </div>
         </section>
         <section>
@@ -59,7 +60,7 @@ export default function Home() {
             </div>
           </div>
           <div className="mt-8 text-center animate-fade-in delay-1200">
-            <a href="/gallery" className="inline-block bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-blue-600 transition-colors duration-300 transform hover:scale-105">View Full Gallery</a>
+            <Link href="/gallery" className="inline-block bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-blue-600 transition-colors duration-300 transform hover:scale-105">View Full Gallery</Link>
           </div>
         </section>
       </main>
