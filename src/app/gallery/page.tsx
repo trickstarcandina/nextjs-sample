@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Gallery() {
   // Sample cat image data - in a real app, this could be fetched from a folder or API
@@ -39,7 +40,7 @@ export default function Gallery() {
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
             {images.map(image => (
               <div key={image.id} className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:scale-105 animate-fade-in" style={{ animationDelay: `${300 + (image.id - 1) * 100}ms` }}>
-                <img src={image.src} alt={image.alt} className="w-full h-48 object-cover transition-transform duration-500 hover:scale-110" />
+                <Image src={image.src} alt={image.alt} width={300} height={300} className="w-full h-48 object-cover transition-transform duration-500 hover:scale-110" />
               </div>
             ))}
           </div>

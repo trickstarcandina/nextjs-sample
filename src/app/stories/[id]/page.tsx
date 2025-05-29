@@ -61,7 +61,7 @@ export default async function StoryPage({ params }: { params: Promise<{ id: stri
         
         One winter night, a shivering traveler named Lila stumbled into the village. Seeing her cold hands, the villagers offered Warmie to her. As soon as Lila wrapped herself in the blanket, she felt a warmth that melted away her worries. She smiled for the first time in days.
         
-        Warmie’s magic spread through the village, reminding everyone that a small gesture of care can warm even the coldest heart. And so, Warmie’s legend grew, one cozy hug at a time.
+        Warmie's magic spread through the village, reminding everyone that a small gesture of care can warm even the coldest heart. And so, Warmie's legend grew, one cozy hug at a time.
       `,
     },
   ];

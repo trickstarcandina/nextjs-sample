@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Home() {
   return (
@@ -47,16 +48,16 @@ export default function Home() {
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
             {/* Sample cat images */}
             <div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:scale-105 animate-fade-in delay-800">
-              <img src="https://picsum.photos/300/300?random=1&category=cats" alt="Cute cat 1" className="w-full h-48 object-cover transition-transform duration-500 hover:scale-110" />
+              <Image src="https://picsum.photos/300/300?random=1&category=cats" alt="Cute cat 1" width={300} height={300} className="w-full h-48 object-cover transition-transform duration-500 hover:scale-110" />
             </div>
             <div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:scale-105 animate-fade-in delay-900">
-              <img src="https://picsum.photos/300/300?random=2&category=cats" alt="Cute cat 2" className="w-full h-48 object-cover transition-transform duration-500 hover:scale-110" />
+              <Image src="https://picsum.photos/300/300?random=2&category=cats" alt="Cute cat 2" width={300} height={300} className="w-full h-48 object-cover transition-transform duration-500 hover:scale-110" />
             </div>
             <div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:scale-105 animate-fade-in delay-1000">
-              <img src="https://picsum.photos/300/300?random=3&category=cats" alt="Cute cat 3" className="w-full h-48 object-cover transition-transform duration-500 hover:scale-110" />
+              <Image src="https://picsum.photos/300/300?random=3&category=cats" alt="Cute cat 3" width={300} height={300} className="w-full h-48 object-cover transition-transform duration-500 hover:scale-110" />
             </div>
             <div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:scale-105 animate-fade-in delay-1100">
-              <img src="https://picsum.photos/300/300?random=4&category=cats" alt="Cute cat 4" className="w-full h-48 object-cover transition-transform duration-500 hover:scale-110" />
+              <Image src="https://picsum.photos/300/300?random=4&category=cats" alt="Cute cat 4" width={300} height={300} className="w-full h-48 object-cover transition-transform duration-500 hover:scale-110" />
             </div>
           </div>
           <div className="mt-8 text-center animate-fade-in delay-1200">
